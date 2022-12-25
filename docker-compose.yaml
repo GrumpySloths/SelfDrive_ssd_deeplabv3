@@ -1,0 +1,10 @@
+services:
+  task1:
+    build: ../
+    command: python train.py
+    image: test:0.2
+    ports:
+    - 9999:8888
+    volumes:
+    - /home/taig/niujh/workspace:/workspace
+version: '3.6'
